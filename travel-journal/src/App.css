@@ -1,0 +1,145 @@
+.Nav-bar {
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  top: 0px;
+  left: 0;
+  background: #F55A5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.125rem;
+  letter-spacing: -0.075em;
+  color: #FFFFFF;
+  margin-left: 0.5rem;
+}
+
+.Nav-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  margin-right: 0.5rem;
+}
+
+.experience {
+  position: relative;
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.exp-img {
+  position: absolute;
+  width: 125px;
+  height: 168px;
+  left: 40px;
+  top: 100px;
+  background: url('.png');
+  border-radius: 5px;
+}
+
+.exp-date {
+  position: absolute;
+  width: 319px;
+  height: 11px;
+  left: 184px;
+  top: 183px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.64rem;
+  line-height: 1.125rem;
+  color: #2B283A;
+}
+
+.exp-country {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  left: 195px;
+  top: 119px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.64rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.17em;
+  color: #2B283A;
+}
+
+.exp-maps {
+  position: absolute;
+  width: 106px;
+  height: 13px;
+  left: 247px;
+  top: 119px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.64rem;
+  line-height: 1.125rem;
+  text-decoration-line: underline;
+  color: #918E9B;
+}
+
+.exp-title {
+  position: absolute;
+  width: 326px;
+  height: 30px;
+  left: 184px;
+  top: 122px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  color: #2B283A;
+}
+
+.exp-info {
+  position: absolute;
+  width: 326px;
+  height: 45px;
+  left: 184px;
+  top: 203px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.64rem;
+  line-height: 1.5;
+  color: #2B283A;
+}
+.geo-img{
+  /* Fill 219 */
+
+position: absolute;
+width: 7px;
+height: 9.55px;
+left: 184px;
+top: 120px;
+
+background:transparent;
+
+}
+.end{
+  /* Line 16 */
+
+position: absolute;
+width: 478px;
+height: 0px;
+left: 40px;
+top: 286px;
+
+border: 1px solid #F5F5F5;
+
+}
