@@ -1,24 +1,28 @@
 import image from './images/drop.png';
-import japan from './images/japan.png'
+
 export default function Experience(props) {
 	return (
-		<div>
-			<img src={japan}alt='' className='exp-img' />
+    <div className="card">
+    <div className="card--img-box">
+    <img src={props.item.imageUrl} alt='' className='card--img' />
+    </div>
+    <div className="card--infos">
 
-				<img src={image} alt='' className='geo-img' />
-				<span className='exp-country'>JAPAN</span>
-				<a href='#'>
-					{' '}
-					<span className='exp-maps'>View on Google Maps</span>
-				</a>
-			<h2 className='exp-title'>Mount Fuji</h2>
-      <p className='exp-date'>12 Jan, 2021 - 24 Jan, 2021</p>
-			<p className='exp-info'>
-				Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters
-				(12,380 feet). Mount Fuji is the single most popular tourist site in
-				Japan, for both Japanese and foreign tourists.
+			<img src={image} alt='' className='card--location-icon' />
+      <h2 className="card--location">{props.item.location}</h2>
+			<a href={props.item.googleMapsUrl} className='card--location-url'>
+				View on Google Maps
+			</a>
+
+			<h3 className='card--title'>{props.item.title}</h3>
+			<p className='card--date'>
+				{props.item.startDate} - {props.item.endDate}
 			</p>
-      <hr className='end' />
+			<p className='card--description'>{props.item.description}</p>
+
+      </div>
+      
+
 		</div>
 	);
 }

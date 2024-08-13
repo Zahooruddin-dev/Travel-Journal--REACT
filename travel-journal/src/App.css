@@ -1,145 +1,134 @@
+
 .Nav-bar {
   position: absolute;
   width: 100%;
   height: 55px;
   top: 0px;
   left: 0;
-  background: #F55A5A;
-  display: flex;
+  background: linear-gradient(#30ffd9, #ffffff);  display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5em 0;
+
 }
 
 .Nav-title {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 0.9rem;
-  line-height: 1.125rem;
+  line-height: 1em;
   letter-spacing: -0.075em;
   color: #FFFFFF;
   margin-left: 0.5rem;
 }
 
 .Nav-img {
-  width: 1.5rem;
-  height: 1.5rem;
-  background: transparent;
-  margin-right: 0.5rem;
+ 
+  height: 2em;
+
 }
 
-.experience {
-  position: relative;
-  width: 100%;
-  max-width: 470px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: hidden;
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 3em;
 }
 
-.exp-img {
-  position: absolute;
-  width: 125px;
-  height: 168px;
-  left: 40px;
-  top: 100px;
-  background: url('.png');
-  border-radius: 5px;
+.card {
+  color: var(--clr-text-main);
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
 }
 
-.exp-date {
-  position: absolute;
-  width: 319px;
-  height: 11px;
-  left: 184px;
-  top: 183px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.64rem;
-  line-height: 1.125rem;
-  color: #2B283A;
+.card--img {
+  padding-left: 2rem;
+  height: 100%;
+  /* width: 20vw; */
+  height: 14rem;
+  width: 9em;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.3em;
+
+  transform: scale(1);
+  transition: all 650ms ease-in-out;
 }
 
-.exp-country {
-  position: absolute;
-  width: 40px;
-  height: 10px;
-  left: 195px;
-  top: 119px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.64rem;
-  line-height: 1.125rem;
-  letter-spacing: 0.17em;
-  color: #2B283A;
+.card--img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+  /* filter: brightness(80%); */
 }
 
-.exp-maps {
-  position: absolute;
-  width: 106px;
-  height: 13px;
-  left: 247px;
-  top: 119px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.64rem;
-  line-height: 1.125rem;
-  text-decoration-line: underline;
-  color: #918E9B;
+.card--infos {
+  margin-left: 1em;
+  padding: 0.5em;
 }
 
-.exp-title {
-  position: absolute;
-  width: 326px;
-  height: 30px;
-  left: 184px;
-  top: 122px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5625rem;
-  line-height: 1.875rem;
-  color: #2B283A;
-}
+.card--location-icon {
+  color: var(--clr-accent);
+  width: 0.4375rem;
+  height: 0.597rem;
 
-.exp-info {
-  position: absolute;
-  width: 326px;
-  height: 45px;
-  left: 184px;
-  top: 203px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.64rem;
-  line-height: 1.5;
-  color: #2B283A;
-}
-.geo-img{
-  /* Fill 219 */
-
-position: absolute;
-width: 7px;
-height: 9.55px;
-left: 184px;
-top: 120px;
 
 background:transparent;
-
 }
-.end{
-  /* Line 16 */
 
-position: absolute;
-width: 478px;
-height: 0px;
-left: 40px;
-top: 286px;
+.card--location {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin: 0 1em 0 0.25em;
+  color: var(--clr-text-main);
+}
 
-border: 1px solid #F5F5F5;
+.card--location-url {
+  color: var(--clr-text-light); /* Set text color to the light variable */
+  font-size: 0.75rem;
+  color: #918E9B; /* Background color */
+  text-decoration: none; /* Optional: Remove underline from the link */
+}
 
+.card--location-url:hover {
+  color: var(--clr-text-light); /* Ensure hover doesn't change the text color */
+}
+
+.card--title {
+  font-size: 2rem;
+  margin: 0.25em 0;
+  font-weight: 700;
+}
+
+.card--date {
+  font-weight: 700;
+}
+
+.card--description {
+  max-width: 50rem;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+/* Dynamic cards divider  
+took me a while to find out that you need
+dynamic cards divde styling
+*/
+
+.cards-list > .card + .card {
+  padding: 2em 0;
+  border-top: 1px solid var(--clr-text-light);
+}
+
+.cards-list .card:first-child {
+  padding-top: 0;
+}
+
+.cards-list .card:last-child {
+  padding-bottom: 0;
 }

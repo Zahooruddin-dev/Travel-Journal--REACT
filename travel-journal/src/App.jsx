@@ -16,7 +16,7 @@ const dateElements = data.map(item=>{
   return (
     <>
     <NavBar/>
-    <section className='expericene'>
+    <section className='card-list'>
       {dateElements}
     </section>
     </>
